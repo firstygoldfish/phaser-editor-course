@@ -58,7 +58,7 @@ export default class Level extends Phaser.Scene {
 		this.add.existing(food_1);
 
 		// prefabFood
-		const prefabFood = new PrefabFood(this, 812, 70);
+		const prefabFood = new PrefabFood(this, 889, 70);
 		this.add.existing(prefabFood);
 
 		// textScore
@@ -66,8 +66,12 @@ export default class Level extends Phaser.Scene {
 		textScore.text = "Score: 0";
 		textScore.setStyle({ "fontSize": "48px" });
 
+		// food_2
+		const food_2 = new PrefabFood(this, 313, 84);
+		this.add.existing(food_2);
+
 		// lists
-		const listFood = [prefabFood, food_1];
+		const listFood = [prefabFood, food_1, food_2];
 
 		// collider_dino
 		this.physics.add.collider(dino, dino_1, undefined, undefined, this);

@@ -86,7 +86,7 @@
                 "y"
             ],
             "label": "prefabFood",
-            "x": 812,
+            "x": 889,
             "y": 70
         },
         {
@@ -98,6 +98,17 @@
             "y": 5,
             "text": "Score: 0",
             "fontSize": "48px"
+        },
+        {
+            "prefabId": "50c3b37c-a317-4c2e-918a-fe4f011cc5d7",
+            "id": "bc01635f-5543-40e3-866c-243cd621a1f7",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "food_2",
+            "x": 313,
+            "y": 84
         }
     ],
     "plainObjects": [
@@ -158,7 +169,8 @@
             "label": "listFood",
             "objectIds": [
                 "a0fe221d-8e65-42a3-a339-f973a70d4b58",
-                "e1c6acd4-fe4e-4cdf-b03a-e8c136971acc"
+                "e1c6acd4-fe4e-4cdf-b03a-e8c136971acc",
+                "bc01635f-5543-40e3-866c-243cd621a1f7"
             ]
         }
     ]
