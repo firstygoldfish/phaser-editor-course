@@ -1,0 +1,40 @@
+{
+    "id": "50c3b37c-a317-4c2e-918a-fe4f011cc5d7",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "importFileExtension": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1280,
+        "borderHeight": 720
+    },
+    "displayList": [
+        {
+            "type": "ArcadeImage",
+            "id": "70ee5ea6-76e1-45a9-a9dc-20d10c1ffa4c",
+            "label": "food_1",
+            "scope": "CLASS",
+            "texture": {
+                "key": "guapen"
+            },
+            "scaleX": 0.25,
+            "scaleY": 0.25,
+            "tintTopLeft": "#89ea5b",
+            "tintTopRight": "#89ea5b",
+            "tintBottomLeft": "#368411",
+            "tintBottomRight": "#368411",
+            "body.width": 208,
+            "body.height": 240
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}
