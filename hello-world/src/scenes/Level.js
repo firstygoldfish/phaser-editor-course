@@ -32,23 +32,39 @@ export default class Level extends Phaser.Scene {
 		// right_key
 		const right_key = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.RIGHT);
 
+		// bg
+		const bg = this.add.image(640, 358, "bg");
+		bg.scaleX = 2.0536400059061237;
+		bg.scaleY = 1.5812484016335173;
+		bg.alpha = 0.75;
+		bg.alphaTopLeft = 0.75;
+		bg.alphaTopRight = 0.75;
+		bg.alphaBottomLeft = 0.75;
+		bg.alphaBottomRight = 0.75;
+
 		// welcome
-		const welcome = this.add.text(640, 478, "", {});
+		const welcome = this.add.text(640, 174, "", {});
 		welcome.setOrigin(0.5, 0.5);
+		welcome.tintTopLeft = 0;
+		welcome.tintTopRight = 0;
+		welcome.tintBottomLeft = 11119017;
+		welcome.tintBottomRight = 11119017;
 		welcome.text = "Phaser 3 & Phaser Editor v4";
 		welcome.setStyle({ "fontFamily": "s", "fontSize": "30px" });
 
 		// dino
 		const dino = this.physics.add.image(640, 288, "dino");
 		dino.setInteractive(new Phaser.Geom.Rectangle(35, 14, 164.51933899844647, 222.41531742016807), Phaser.Geom.Rectangle.Contains);
+		dino.scaleX = 0.5;
+		dino.scaleY = 0.5;
 		dino.body.collideWorldBounds = true;
 		dino.body.setSize(250, 250, false);
 
 		// dino_1
 		const dino_1 = this.physics.add.image(982, 288, "dino");
 		dino_1.setInteractive(new Phaser.Geom.Rectangle(35, 14, 164.51933899844647, 222.41531742016807), Phaser.Geom.Rectangle.Contains);
-		dino_1.scaleX = 0.5;
-		dino_1.scaleY = 0.5;
+		dino_1.scaleX = 0.4;
+		dino_1.scaleY = 0.4;
 		dino_1.body.collideWorldBounds = true;
 		dino_1.body.immovable = true;
 		dino_1.body.setSize(250, 250, false);

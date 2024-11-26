@@ -13,14 +13,35 @@
     },
     "displayList": [
         {
+            "type": "Image",
+            "id": "7bb26ee0-9b52-47b4-afe1-0d874b7d5298",
+            "label": "bg",
+            "texture": {
+                "key": "bg"
+            },
+            "x": 640,
+            "y": 358,
+            "scaleX": 2.0536400059061237,
+            "scaleY": 1.5812484016335173,
+            "alpha": 0.75,
+            "alphaTopLeft": 0.75,
+            "alphaTopRight": 0.75,
+            "alphaBottomLeft": 0.75,
+            "alphaBottomRight": 0.75
+        },
+        {
             "type": "Text",
             "id": "b2b3dbd5-2106-41fa-8a04-9b511e3401a9",
             "label": "welcome",
             "scope": "CLASS",
             "x": 640,
-            "y": 478,
+            "y": 174,
             "originX": 0.5,
             "originY": 0.5,
+            "tintTopLeft": "#000000",
+            "tintTopRight": "#000000",
+            "tintBottomLeft": "#a9a9a9",
+            "tintBottomRight": "#a9a9a9",
             "text": "Phaser 3 & Phaser Editor v4",
             "fontFamily": "s",
             "fontSize": "30px"
@@ -40,6 +61,8 @@
             },
             "x": 640,
             "y": 288,
+            "scaleX": 0.5,
+            "scaleY": 0.5,
             "collideWorldBounds": true,
             "body.width": 250,
             "body.height": 250
@@ -59,8 +82,8 @@
             },
             "x": 982,
             "y": 288,
-            "scaleX": 0.5,
-            "scaleY": 0.5,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
             "collideWorldBounds": true,
             "immovable": true,
             "body.width": 250,
