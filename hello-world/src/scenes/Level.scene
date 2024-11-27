@@ -13,38 +13,38 @@
     },
     "displayList": [
         {
-            "type": "Image",
-            "id": "7bb26ee0-9b52-47b4-afe1-0d874b7d5298",
-            "label": "bg",
-            "texture": {
-                "key": "bg"
-            },
-            "x": 640,
-            "y": 358,
-            "scaleX": 2.0536400059061237,
-            "scaleY": 1.5812484016335173,
-            "alpha": 0.75,
-            "alphaTopLeft": 0.75,
-            "alphaTopRight": 0.75,
-            "alphaBottomLeft": 0.75,
-            "alphaBottomRight": 0.75
-        },
-        {
-            "type": "Text",
-            "id": "b2b3dbd5-2106-41fa-8a04-9b511e3401a9",
-            "label": "welcome",
-            "scope": "CLASS",
-            "x": 640,
-            "y": 174,
-            "originX": 0.5,
-            "originY": 0.5,
-            "tintTopLeft": "#000000",
-            "tintTopRight": "#000000",
-            "tintBottomLeft": "#a9a9a9",
-            "tintBottomRight": "#a9a9a9",
-            "text": "Phaser 3 & Phaser Editor v4",
-            "fontFamily": "s",
-            "fontSize": "30px"
+            "type": "Layer",
+            "id": "74943a4f-61ef-4166-8fc5-99edc5515b9c",
+            "label": "UI",
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "7bb26ee0-9b52-47b4-afe1-0d874b7d5298",
+                    "label": "bg",
+                    "texture": {
+                        "key": "bg"
+                    },
+                    "x": 640,
+                    "y": 358,
+                    "scaleX": 2.0536400059061237,
+                    "scaleY": 1.5812484016335173,
+                    "alpha": 0.75,
+                    "alphaTopLeft": 0.75,
+                    "alphaTopRight": 0.75,
+                    "alphaBottomLeft": 0.75,
+                    "alphaBottomRight": 0.75
+                },
+                {
+                    "type": "Text",
+                    "id": "12149524-3b5f-4c96-9725-802f09a06027",
+                    "label": "textScore",
+                    "scope": "CLASS",
+                    "x": 5,
+                    "y": 5,
+                    "text": "Score: 0",
+                    "fontSize": "48px"
+                }
+            ]
         },
         {
             "type": "ArcadeImage",
@@ -68,28 +68,6 @@
             "body.height": 250
         },
         {
-            "type": "ArcadeImage",
-            "id": "20365ce2-5f32-4dcb-8560-c6b6f8349a1e",
-            "label": "dino_1",
-            "scope": "CLASS",
-            "hitArea.shape": "RECTANGLE",
-            "hitArea.x": 35,
-            "hitArea.y": 14,
-            "hitArea.width": 164.51933899844647,
-            "hitArea.height": 222.41531742016807,
-            "texture": {
-                "key": "dino"
-            },
-            "x": 982,
-            "y": 288,
-            "scaleX": 0.4,
-            "scaleY": 0.4,
-            "collideWorldBounds": true,
-            "immovable": true,
-            "body.width": 250,
-            "body.height": 250
-        },
-        {
             "prefabId": "50c3b37c-a317-4c2e-918a-fe4f011cc5d7",
             "id": "e1c6acd4-fe4e-4cdf-b03a-e8c136971acc",
             "unlock": [
@@ -106,32 +84,96 @@
             "id": "a0fe221d-8e65-42a3-a339-f973a70d4b58",
             "unlock": [
                 "x",
-                "y"
+                "y",
+                "tintTopLeft",
+                "tintTopRight"
             ],
             "label": "prefabFood",
             "x": 889,
-            "y": 70
-        },
-        {
-            "type": "Text",
-            "id": "12149524-3b5f-4c96-9725-802f09a06027",
-            "label": "textScore",
-            "scope": "CLASS",
-            "x": 5,
-            "y": 5,
-            "text": "Score: 0",
-            "fontSize": "48px"
+            "y": 70,
+            "tintTopLeft": "#f4e760",
+            "tintTopRight": "#f4e760"
         },
         {
             "prefabId": "50c3b37c-a317-4c2e-918a-fe4f011cc5d7",
             "id": "bc01635f-5543-40e3-866c-243cd621a1f7",
             "unlock": [
                 "x",
-                "y"
+                "y",
+                "tintTopLeft",
+                "tintTopRight"
             ],
             "label": "food_2",
-            "x": 313,
-            "y": 84
+            "x": 288,
+            "y": 130,
+            "tintTopLeft": "#e83e1f",
+            "tintTopRight": "#e83e1f"
+        },
+        {
+            "prefabId": "f9905eb8-cba9-4021-bbe8-cec90992eb36",
+            "id": "6cb369c8-e115-4517-98d6-b55dd00be1dc",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "burger_1",
+            "x": 1107,
+            "y": 150
+        },
+        {
+            "prefabId": "f9905eb8-cba9-4021-bbe8-cec90992eb36",
+            "id": "6d62191a-c3a8-486d-a3b7-24de8a728de2",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "burger",
+            "x": 987,
+            "y": 471
+        },
+        {
+            "prefabId": "f8687bbc-62d1-4db9-95b4-7abf5b16aa50",
+            "id": "ba3f4793-dc2a-4873-b2fa-28118697f5a6",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "rock",
+            "x": 266,
+            "y": 260
+        },
+        {
+            "prefabId": "f8687bbc-62d1-4db9-95b4-7abf5b16aa50",
+            "id": "40422e07-b7b9-44b3-aed1-7e2124826502",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "rock1",
+            "x": 927,
+            "y": 294
+        },
+        {
+            "prefabId": "f8687bbc-62d1-4db9-95b4-7abf5b16aa50",
+            "id": "9e89f48f-0d59-4a29-8b16-11f54c746491",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "rock2",
+            "x": 561,
+            "y": 473
+        },
+        {
+            "prefabId": "f8687bbc-62d1-4db9-95b4-7abf5b16aa50",
+            "id": "0d5db85f-4d7d-48fd-a09c-ce306fe42cd9",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "rock3",
+            "x": 545,
+            "y": 62
         }
     ],
     "plainObjects": [
@@ -160,15 +202,6 @@
             "keyCode": "RIGHT"
         },
         {
-            "id": "a4160aff-adab-47e7-8fb2-335fb11cdaff",
-            "type": "Collider",
-            "label": "collider_dino",
-            "scope": "LOCAL",
-            "object1": "dino",
-            "object2": "dino_1",
-            "callbackContext": "this"
-        },
-        {
             "id": "858311a2-77ac-4961-8bcc-62a2bd35fa6d",
             "type": "Collider",
             "label": "collider_food",
@@ -178,6 +211,14 @@
             "overlapOnly": true,
             "collideCallback": "this.eatFruit",
             "callbackContext": "this"
+        },
+        {
+            "id": "ff75c293-3e08-4e0b-8674-9915f9293cad",
+            "type": "Collider",
+            "label": "collider_rock",
+            "scope": "LOCAL",
+            "object1": "dino",
+            "object2": "listRock"
         }
     ],
     "meta": {
@@ -193,7 +234,19 @@
             "objectIds": [
                 "a0fe221d-8e65-42a3-a339-f973a70d4b58",
                 "e1c6acd4-fe4e-4cdf-b03a-e8c136971acc",
-                "bc01635f-5543-40e3-866c-243cd621a1f7"
+                "bc01635f-5543-40e3-866c-243cd621a1f7",
+                "6d62191a-c3a8-486d-a3b7-24de8a728de2",
+                "6cb369c8-e115-4517-98d6-b55dd00be1dc"
+            ]
+        },
+        {
+            "id": "136ca175-653b-4e8d-9bf4-daee616aeb96",
+            "label": "listRock",
+            "objectIds": [
+                "ba3f4793-dc2a-4873-b2fa-28118697f5a6",
+                "0d5db85f-4d7d-48fd-a09c-ce306fe42cd9",
+                "9e89f48f-0d59-4a29-8b16-11f54c746491",
+                "40422e07-b7b9-44b3-aed1-7e2124826502"
             ]
         }
     ]

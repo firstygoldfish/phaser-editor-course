@@ -35,10 +35,26 @@
             "texture": {
                 "key": "button"
             },
-            "x": 626,
-            "y": 301,
+            "x": 640,
+            "y": 478,
             "scaleX": 1.5,
             "scaleY": 1.5
+        },
+        {
+            "type": "Text",
+            "id": "c796f67e-15ea-45b5-9a00-51415581d0ce",
+            "label": "text_1",
+            "x": 640,
+            "y": 360,
+            "originX": 0.5,
+            "originY": 0.5,
+            "tintTopLeft": "#030747",
+            "tintTopRight": "#030747",
+            "tintBottomLeft": "#030747",
+            "tintBottomRight": "#030747",
+            "text": "Hungry Dinosaur",
+            "fontSize": "48px",
+            "strokeThickness": 1
         }
     ],
     "plainObjects": [],

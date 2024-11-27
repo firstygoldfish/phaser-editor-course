@@ -25,10 +25,20 @@ export default class Main extends Phaser.Scene {
 		bg.scaleY = 1.669358301520048;
 
 		// buttonStart
-		const buttonStart = this.add.image(626, 301, "button");
+		const buttonStart = this.add.image(640, 478, "button");
 		buttonStart.setInteractive(new Phaser.Geom.Rectangle(0, 0, 157, 49), Phaser.Geom.Rectangle.Contains);
 		buttonStart.scaleX = 1.5;
 		buttonStart.scaleY = 1.5;
+
+		// text_1
+		const text_1 = this.add.text(640, 360, "", {});
+		text_1.setOrigin(0.5, 0.5);
+		text_1.tintTopLeft = 198471;
+		text_1.tintTopRight = 198471;
+		text_1.tintBottomLeft = 198471;
+		text_1.tintBottomRight = 198471;
+		text_1.text = "Hungry Dinosaur";
+		text_1.setStyle({ "fontSize": "48px", "strokeThickness": 1 });
 
 		this.buttonStart = buttonStart;
 
@@ -45,7 +55,7 @@ export default class Main extends Phaser.Scene {
 	create() {
 
 		this.editorCreate();
-		this.buttonStart.on("pointerdown", () => {
+		this.buttonStart.once("pointerdown", () => {
 			this.scene.start("Level");
 		});
 	}

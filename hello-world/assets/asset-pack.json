@@ -2,9 +2,27 @@
     "section1": {
         "files": [
             {
+                "url": "assets/animations_burger.json",
+                "type": "animation",
+                "key": "animations_burger"
+            },
+            {
                 "url": "assets/bg.jpg",
                 "type": "image",
                 "key": "bg"
+            },
+            {
+                "url": "assets/burger_spritesheet.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "burger_spritesheet"
             },
             {
                 "url": "assets/button.png",
@@ -15,6 +33,11 @@
                 "url": "assets/dino.png",
                 "key": "dino",
                 "type": "image"
+            },
+            {
+                "url": "assets/tile_0000.png",
+                "type": "image",
+                "key": "tile_0000"
             }
         ]
     },
